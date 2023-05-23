@@ -87,13 +87,14 @@ section.imagem > p{
 
 section#img01{
     background-image: url('../imagens/ladybug-gb778c390c_1280.jpg');
-    background-position: center ;
+    background-position: right ;
     background-size: cover; /*Imagem fica do tamanho exato sem aumentar mais do que ela mesma*/
 }
 
 section#img02{
     background-image: url('../imagens/old-letters-g230d02600_1280.jpg');
     background-size: cover;
+    background-position: right;
 }
 
 
