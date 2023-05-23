@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+
+}
+
+html,body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    /*text-transform: uppercase; TUDO EM LETRA MAIUSCULA*/
+    font-variant: small-caps; /*Ideal para títulos pois as inicias ficam maiusculas*/
+    font-family: var(--fonte2);
+    /*font-size: 4em;*/
+    font-size: 10vw; /*Não é a melhor maneira, mas isso funciona para adaptar o tamanho de acordo com a largura do navegador*/
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section {
+    padding-top: 10vh; /*vh é o visivel da viewport*/
+    padding-bottom: 10vh; /**/
+    line-height: 2em; /*altura de espacamento entre linhas*/
+    padding-left: 30px; /* espaço a esquerda*/
+    font-family: var(--fonte3);
+    font-size: 3vw; /*Não é a melhor maneira, mas isso funciona para adaptar o tamanho de acordo com a largura do navegador*/
+
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.678);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.425); /*Sombra para dentro*/
+    background-attachment: fixed; /*P A R A L L A X */
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.527);
+    display: inline-block; /*CAIXA SE ADAPTA AO TAMANHO DO BLOCO */
+    padding: 5px;
+    text-shadow: 1px 1px 0px black ;
+}
+
+section#img01{
+    background-image: url('../imagens/ladybug-gb778c390c_1280.jpg');
+    background-position: center ;
+    background-size: cover; /*Imagem fica do tamanho exato sem aumentar mais do que ela mesma*/
+}
+
+section#img02{
+    background-image: url('../imagens/old-letters-g230d02600_1280.jpg');
+    background-size: cover;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
