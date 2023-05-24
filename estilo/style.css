@@ -86,8 +86,8 @@ section.imagem > p{
 }
 
 section#img01{
-    background-image: url('../imagens/ladybug-gb778c390c_1280.jpg');
-    background-position: right ;
+    background-image: url('../imagens/novajoaninha.png');
+    background-position: right;
     background-size: cover; /*Imagem fica do tamanho exato sem aumentar mais do que ela mesma*/
 }
 
